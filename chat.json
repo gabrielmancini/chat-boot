@@ -1,0 +1,24 @@
+{
+  "root": [
+    {"say": "Ola Bem vindo! o que deseja?"},
+    {"hear": "ola|help|ajuda", "say": "Minhas especialidades sao:", "buttons" : ["Marvel", "DC"]},
+    {"hear": "Marvel", "say": "caminho:", "buttons" : ["Heroi", "Vilao"],
+      "subject" : [
+        {"hear": "Heroi", "say": "Herois Marvel sao:", "list" : ["Homem-Aranha", "Wolverine", "Demolidor"],
+         "subject": "root"}
+      ,
+        {"hear": "Vilao", "say": "Viloes Marvel sao:", "list" : ["Dr. Otto", "Dente de Sabre", "Mercenario"],
+         "subject":"root"}
+      ]
+    },
+    {"hear": "DC", "say": "caminho:", "buttons" : ["Heroi", "Vilao"],
+      "subject": [
+        {"hear": "Heroi", "say": "Herois DC sao:", "list" : ["Batman", "Superman", "Flash"],
+         "subject": "root"}
+      ,
+        {"hear": "Vilao", "say": "Viloes DC sao:", "list" : ["Joker", "lex", "zero"],
+         "subject": "root"}
+      ]
+    }
+  ]
+}
