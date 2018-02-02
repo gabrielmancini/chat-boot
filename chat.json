@@ -1,23 +1,24 @@
 {
-  "root": [
+  "subject": [
     {"say": "Ola Bem vindo! o que deseja?"},
-    {"hear": "ola|help|ajuda", "say": "Minhas especialidades sao:", "buttons" : ["Marvel", "DC"]},
-    {"hear": "Marvel", "say": "caminho:", "buttons" : ["Heroi", "Vilao"],
+    {"hear": "ola|help|ajuda", "say": "Minhas especialidades sao:",
+      "bootbot":{"quickReplies" : ["Marvel", "DC"]}},
+    {"hear": "Marvel", "say": "caminho:",   "bootbot":{"quickReplies" : ["Heroi Marvel", "Vilao Marvel"]},
       "subject" : [
-        {"hear": "Heroi", "say": "Herois Marvel sao:", "list" : ["Homem-Aranha", "Wolverine", "Demolidor"],
-         "subject": "root"}
+        {"hear": "Heroi Marvel", "say": "Herois Marvel sao:",   "bootbot":{"quickReplies" : ["Homem-Aranha", "Wolverine", "Demolidor"]},
+         "goto": 1}
       ,
-        {"hear": "Vilao", "say": "Viloes Marvel sao:", "list" : ["Dr. Otto", "Dente de Sabre", "Mercenario"],
-         "subject":"root"}
+        {"hear": "Vilao Marvel", "say": "Viloes Marvel sao:",   "bootbot":{"quickReplies" : ["Dr. Otto", "Dente de Sabre", "Mercenario"]},
+         "goto": 1}
       ]
     },
-    {"hear": "DC", "say": "caminho:", "buttons" : ["Heroi", "Vilao"],
+    {"hear": "DC", "say": "caminho:",   "bootbot":{"quickReplies" : ["Heroi DC", "Vilao DC"]},
       "subject": [
-        {"hear": "Heroi", "say": "Herois DC sao:", "list" : ["Batman", "Superman", "Flash"],
-         "subject": "root"}
+        {"hear": "Heroi DC", "say": "Herois DC sao:",   "bootbot":{"quickReplies" : ["Batman", "Superman", "Flash"]},
+         "goto": 1}
       ,
-        {"hear": "Vilao", "say": "Viloes DC sao:", "list" : ["Joker", "lex", "zero"],
-         "subject": "root"}
+        {"hear": "Vilao DC", "say": "Viloes DC sao:",   "bootbot":{"quickReplies" : ["Joker", "lex", "zero"]},
+         "goto": 1}
       ]
     }
   ]

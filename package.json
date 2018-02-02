@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config index.js",
+    "start": "NODE_DEBUG=chat node -r dotenv/config index.js",
     "debug": "node debug -r dotenv/config index.js",
     "dev": "npm run lt || npm start",
     "lt": "lt -p 3000 -s financialbot &",
@@ -14,9 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "bootbot": "^1.0.14",
-    "dotenv": "^5.0.0",
-    "immutable": "^3.8.2",
-    "neo4j-driver": "^1.5.3"
+    "dotenv": "^5.0.0"
   },
   "devDependencies": {
     "localtunnel": "^1.8.3"
