@@ -50,8 +50,8 @@ bot.hear('image', (payload, chat) => {
   })
 })
 bot.start({port: process.env.PORT || 3000})
-setInterval(function () {
-  process.stdout.clearLine()  // clear current text
-  process.stdout.cursorTo(0)  // move cursor to beginning of line
-  process.stdout.write('Sessions: ' + Object.keys(session))  // write text
-}, 300)
+// setInterval(function () {
+//   process.stdout.clearLine()  // clear current text
+//   process.stdout.cursorTo(0)  // move cursor to beginning of line
+//   process.stdout.write('Sessions: ' + Object.keys(session))  // write text
+// }, 300)
