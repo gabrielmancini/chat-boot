@@ -36,6 +36,12 @@ walk(guide, (element, level) => {
   }
 })
 
+bot.on('message', (payload, chat, data) => {
+  const text = payload.message.text
+  if (data.captured) { return }
+  chat.say(`Nao entendi: ${text} digite help`)
+})
+
 bot.hear('image', (payload, chat) => {
 // Send an attachment
   chat.say({
