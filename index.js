@@ -49,7 +49,7 @@ bot.hear('image', (payload, chat) => {
     url: 'http://example.com/image.png'
   })
 })
-bot.start()
+bot.start({port: process.env.PORT || 3000})
 setInterval(function () {
   process.stdout.clearLine()  // clear current text
   process.stdout.cursorTo(0)  // move cursor to beginning of line
