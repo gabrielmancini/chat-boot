@@ -19,6 +19,6 @@ deploy:
   region: "sa-east-1"
   app: "chat-bot"
   env: "chat-bot-env"
-  bucket_name: "chat-bot-source"
+  bucket_name: "elasticbeanstalk-sa-east-1-449077162583"
   on:
     branch: master
